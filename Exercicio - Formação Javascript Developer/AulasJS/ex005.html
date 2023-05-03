@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* + (Adição) = {5 + 2 = 7} 
+           - (Subtração) = {5 - 2 = 3}
+           * (Multiplicar) = {5 * 2 = 10}
+           / (Divisão) = {5 / 2 = 2.5}
+           % (Resto de Divisão Inteira) = {5 % 2 = 1}
+          ** (Potenciação)  = {5 ** 2 = 25} 
+        */
+
+        /* Ordem de Precedência
+          Primeiro ()          |  ()  **  /
+            Segundo **         |  >   <   >= 
+            Terceiro *  /  %   |  !
+            Quarto + -         |  &&
+                               |  ||
+        */
+
+        /* Atribuição Simples
+        var a = 5 + 3 == 8 
+        var b = a % 5 == 3
+        var c = 5 * b ** 2 == 45
+        var d = 10 - a / 2 == 6
+        var e = 6 * 2 / d == 2
+        var f = b % e + 4 / e == 3
+        */
+
+        /* Simplificando
+        var n = 3     |                      
+        n = n + 4     |     n += 4
+        n = n - 5     |     n -= 5
+        n = n * 4     |     n *= 4
+        n = n / 2     |     n /= 2
+        n = n ** 2    |     n **= 2
+        n = n % 5     |     n %= 5
+        */
+       
+        /* Relacionais
+        5 > 2 = True
+        7 < 4 = False
+        8 >= 8 = True
+        9 <= 7 = False
+        5 == 5 = True
+        4 != 4 = False
+        */
+
+        var n1 = Number(window.prompt('Digite um numero: '));
+   var n2 = Number(window.prompt('Digite outro numero: '));
+   var n3 = Number(window.prompt('Digite mais um numero: '));
+   var s = n1 + n2 / n3; 
+   window.alert(`A soma dos dois entre ${n1} + ${n2} / ${n3} é igual a ${s}`);
+    </script>
+</body>
+</html>
